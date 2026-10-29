@@ -37,7 +37,7 @@ jobs:
       - name: Exécuter les tests
         run: echo "Exécution des tests"
       - name: Afficher la version de la qualité du code
-        run: echo La version de la qualité du code ${{needs.code-quality.outputs.quality-code-version}}
+        run: echo La version de la qualité du code ${{needs.code-quality.outputs.code-quality-version}}
   build:
     needs: [test]
     runs-on: ubuntu-latest
